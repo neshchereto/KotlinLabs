@@ -1,0 +1,97 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Розрахунок складу сухої та горючої маси палива та нижчої теплоти згорання для робочої, сухої та горючої маси"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Введіть значення даних, необхідних для подальших обрахунків або залиште наявні:"
+            android:layout_marginTop="16dp" />
+
+        <!-- Поля для введення даних -->
+        <EditText
+            android:id="@+id/hydrogen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Вміст гідрогену (H)"
+            android:inputType="numberDecimal"
+            android:text="1.5" />
+
+        <EditText
+            android:id="@+id/carbon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Вміст вуглецю (C)"
+            android:inputType="numberDecimal"
+            android:text="76.4" />
+
+        <EditText
+            android:id="@+id/sulfur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Вміст сірки (S)"
+            android:inputType="numberDecimal"
+            android:text="1.7" />
+
+        <EditText
+            android:id="@+id/nitrogen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Вміст азоту (N)"
+            android:inputType="numberDecimal"
+            android:text="0.8" />
+
+        <EditText
+            android:id="@+id/oxygen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Вміст кисню (O)"
+            android:inputType="numberDecimal"
+            android:text="1.3" />
+
+        <EditText
+            android:id="@+id/wet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Вміст вологи (в %)"
+            android:inputType="numberDecimal"
+            android:text="5.0" />
+
+        <EditText
+            android:id="@+id/ash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Вміст золи (A)"
+            android:inputType="numberDecimal"
+            android:text="13.3" />
+
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Обчислити" />
+
+        <TextView
+            android:id="@+id/results"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Результати з'являться тут" />
+        </LinearLayout>
+    </ScrollView>
