@@ -1,5 +1,6 @@
 package com.example.lab1
 
+import android.content.Intent
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.*
@@ -10,6 +11,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val buttonToSecond = findViewById<Button>(R.id.button_to_second)
+        buttonToSecond.setOnClickListener {
+            val intent = Intent(this, MainActivity2::class.java)
+            startActivity(intent)
+        }
 
         val hydrogenInput = findViewById<EditText>(R.id.hydrogen)
         val carbonInput = findViewById<EditText>(R.id.carbon)

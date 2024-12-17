@@ -9,16 +9,16 @@
         android:padding="16dp">
 
         <Button
-            android:id="@+id/button_to_second"
+            android:id="@+id/button_to_first"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Перейти на другу сторінку" />
+            android:text="Перейти на першу сторінку" />
 
         <TextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Розрахунок складу сухої та горючої маси палива та нижчої теплоти згорання для робочої, сухої та горючої маси за заданим складом компонентів палива"
+            android:text="Розрахунок елементарного складу та нижчої теплоти згоряння мазуту на робочу масу для складу горючої маси мазуту"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -51,13 +51,6 @@
             android:inputType="numberDecimal" />
 
         <EditText
-            android:id="@+id/nitrogen"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Вміст азоту (N)"
-            android:inputType="numberDecimal" />
-
-        <EditText
             android:id="@+id/oxygen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -78,6 +71,20 @@
             android:hint="Вміст золи (A)"
             android:inputType="numberDecimal" />
 
+        <EditText
+            android:id="@+id/vanadium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Вміст ванадіуму (V)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/q"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Нижча теплота згорання (Q)"
+            android:inputType="numberDecimal" />
+
         <Button
             android:id="@+id/calculateButton"
             android:layout_width="wrap_content"
@@ -91,5 +98,5 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="Результати з'являться тут" />
-        </LinearLayout>
-    </ScrollView>
+    </LinearLayout>
+</ScrollView>
