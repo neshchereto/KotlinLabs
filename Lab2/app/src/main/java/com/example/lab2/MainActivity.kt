@@ -28,9 +28,9 @@ class MainActivity : AppCompatActivity() {
             val result   = coalRes + oilRes
 
             resultsView.text = Html.fromHtml("""
-                Валовий викид при спалюванні вугілля: <b>${"%.2f".format(coalRes)}</b><br>
-                Валовий викид при спалюванні мазуту:  <b>${"%.2f".format(oilRes)}</b><br>
-                Сумарно:                              <b>${"%.2f".format(result)}</b>
+                Валовий викид при спалюванні вугілля: <b>${"%.2f".format(coalRes)} т.</b><br>
+                Валовий викид при спалюванні мазуту:  <b>${"%.2f".format(oilRes)} т.</b><br>
+                Сумарно:                              <b>${"%.2f".format(result)} т.і</b>
             """.trimIndent(),
                 Html.FROM_HTML_MODE_LEGACY)
         }
