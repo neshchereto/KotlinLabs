@@ -50,9 +50,9 @@ class MainActivity2 : AppCompatActivity() {
             val sulfurS = sulfur * krg
             val oxygenS = oxygen * krg
             val ashS = ash * krs
-            val vanadiumS = vanadium * krs;
+            val vanadiumS = vanadium * krs
 
-            val result = q * (100 - wet - ash) / 100 - 0.025 * wet;
+            val result = q * (100 - wet - ash) / 100 - 0.025 * wet
 
             resultsView.text = """
                 Склад робочої маси мазуту
