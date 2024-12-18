@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/button_to_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Перейти на другу сторінку"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Порівняння надійності одноколової та двоколової системи"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/darker_gray">
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ЕП/ЛП"
+                    android:padding="4dp"
+                    android:textSize="11sp"
+                    android:background="@android:color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Частота відмов"
+                    android:padding="4dp"
+                    android:textSize="11sp"
+                    android:background="@android:color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Час відновлення"
+                    android:padding="4dp"
+                    android:textSize="11sp"
+                    android:background="@android:color/white"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Електрогаз. вимикач 110 кВ"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="@android:color/white" />
+
+                <EditText
+                    android:id="@+id/w_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="@android:color/white" />
+
+                <EditText
+                    android:id="@+id/t_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="@android:color/white" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ПЛ-110 кВ (10 км)"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="@android:color/white" />
+
+                <EditText
+                    android:id="@+id/w_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="@android:color/white" />
+
+                <EditText
+                    android:id="@+id/t_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="@android:color/white" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Трансформатор 110/10 кВ"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="@android:color/white" />
+
+                <EditText
+                    android:id="@+id/w_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="@android:color/white" />
+
+                <EditText
+                    android:id="@+id/t_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="@android:color/white" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ввідний вимикач 10 кВ"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="@android:color/white" />
+
+                <EditText
+                    android:id="@+id/w_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="@android:color/white" />
+
+                <EditText
+                    android:id="@+id/t_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="@android:color/white" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Приєднання 10 кВ"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="@android:color/white" />
+
+                <EditText
+                    android:id="@+id/w_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="@android:color/white" />
+
+                <EditText
+                    android:id="@+id/t_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="@android:color/white" />
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Обчислити"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/results"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="15sp"
+            android:text="Результати з'являться тут" />
+    </LinearLayout>
+</ScrollView>
