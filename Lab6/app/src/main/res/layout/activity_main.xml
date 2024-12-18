@@ -1,0 +1,67 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Розрахунок сальдо прибутків сонячної електростанції"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/powerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Середньодобова потужність"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/power"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/tText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Тариф на електроенергію (B) у грн/кВт*год"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/t"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:textSize="20sp"
+            android:text="Обчислити" />
+
+        <TextView
+            android:id="@+id/results"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="Результати з'являться тут" />
+
+    </LinearLayout>
+</ScrollView>
