@@ -1,0 +1,80 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/button_to_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Перейти до першої сторінки"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/button_to_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Перейти до другої сторінки"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Визначення струмів КЗ для підстанції Хмельницьких північних електричних мереж"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/voltageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Середня номінальна напруга"
+            android:textSize="20sp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/voltage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/nom_powerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Номінальне значення потужності"
+            android:textSize="20sp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/nom_power"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:textSize="20sp"
+            android:text="Обчислити" />
+
+        <TextView
+            android:id="@+id/results"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="12sp"
+            android:text="Результати з'являться тут" />
+
+    </LinearLayout>
+</ScrollView>

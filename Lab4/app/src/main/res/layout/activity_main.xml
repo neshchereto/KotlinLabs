@@ -1,0 +1,95 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/button_to_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Перейти на другу сторінку"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/button_to_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Перейти на третю сторінку"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Вибір кабелів для живлення двотрансформаторної підстанції системи внутрішнього електропостачання підприємства напругою 10 кВ"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/amperageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Струм К3"
+            android:textSize="20sp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/amperage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/timeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Фіктивний час вимикання струму КЗ"
+            android:textSize="20sp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/densityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Економічна густина струму"
+            android:textSize="20sp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/density"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="Обчислити" />
+
+        <TextView
+            android:id="@+id/results"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="20sp"
+            android:text="Результати з'являться тут" />
+    </LinearLayout>
+</ScrollView>
